@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://www.kijiji.ca/v-cell-phone-accessories/city-of-toronto/nateroso-iphone-16-case-cute-bear-honey-design/1745477275",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -219,7 +219,7 @@ response = requests.get(
     params={
         "query": "https://www.kijiji.ca/b-bikes/city-of-toronto/c644l1700273",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
